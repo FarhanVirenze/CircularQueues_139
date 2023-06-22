@@ -65,7 +65,7 @@ public:
 
 	void display() {
 		int FRONT_position = FRONT;
-
+		int REAR_position = REAR;
 	}
 };
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
