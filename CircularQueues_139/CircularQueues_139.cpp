@@ -62,6 +62,10 @@ public:
 				FRONT = FRONT + 1;
 		}
 	}
+
+	void display() {
+
+	}
 };
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
