@@ -31,7 +31,13 @@ public:
 			FRONT = 0;
 			REAR = 0;
 		 }
-
+		else {
+			// Jika REAR berada di posisi terakhir array, kembali ke awal array
+			if (REAR == max - 1)
+				REAR = 0;
+			else
+				REAR = REAR + 1;
+		}
 	}
 };
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
