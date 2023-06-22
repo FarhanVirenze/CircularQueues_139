@@ -8,8 +8,15 @@ class Queues {
 	int FRONT, REAR, max = 5;
 	int queue_array[5];
 
+public:
+	Queues() {
+		FRONT = -1;
+		REAR = -1;
+	}
 
+	void insert() {
 
+	}
 };
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
