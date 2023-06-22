@@ -42,7 +42,10 @@ public:
 	}
 
 	void remove() {
+		// Cek apakah antrian kosong
+		if (FRONT == -1) {
 
+		}
 	}
 };
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
