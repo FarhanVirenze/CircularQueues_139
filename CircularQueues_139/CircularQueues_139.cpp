@@ -30,7 +30,7 @@ public:
 		if (FRONT == -1) {
 			FRONT = 0;
 			REAR = 0;
-		 }
+		}
 		else {
 			// Jika REAR berada di posisi terakhir array, kembali ke awal array
 			if (REAR == max - 1)
@@ -77,10 +77,34 @@ public:
 
 		// Jika FRONT_position <= REAR_position, iterasi dari FRONT hingga REAR
 		if (FRONT_position <= REAR_position) {
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
+			}
+			cout << endl;
+		}
+		else {
+			// Jika FRONT_position > REAR_position, iterasi dari FRONT hingga akhir array
+			while (FRONT_position <= max - 1) {
+				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
+			}
 
+			FRONT_position = 0;
+
+			// Iterasi dari awal array hingga REAR
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
+			}
+			cout << endl;
 		}
 	}
 };
+
+int main() {
+
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
